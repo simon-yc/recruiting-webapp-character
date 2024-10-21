@@ -29,6 +29,7 @@ export const loadCharacter = async (setAttributes: any, setSkills: any) => {
     const { attributes, skills } = data.body;
     setAttributes(attributes);
     setSkills(skills);
+    alert("Character loaded successfully!");
   } catch (error) {
     console.error(error);
     alert("Error loading character: " + error.message);
